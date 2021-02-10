@@ -1,0 +1,19 @@
+<section>
+  <p-selectButton
+    [options]="sectors"
+    optionLabel="label"
+    [ngModel]="selectedSector"
+    (onChange)="changeSector($event)"
+    styleClass="sectors"
+  ></p-selectButton>
+
+  <p-chart *ngFor="let serie of series" type="line" [data]="serie" height="300"></p-chart>
+
+  <p-selectButton
+    [options]="periods"
+    optionLabel="label"
+    [ngModel]="selectedPeriod"
+    (onChange)="changePeriod($event)"
+    styleClass="periods"
+  ></p-selectButton>
+</section>

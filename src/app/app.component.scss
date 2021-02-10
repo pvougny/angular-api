@@ -1,0 +1,14 @@
+section {
+  width: 900px;
+  margin: 0 auto;
+}
+
+:host ::ng-deep .p-selectbutton {
+  &.sectors {
+    text-align: right;
+  }
+
+  &.periods {
+    text-align: center;
+  }
+}
